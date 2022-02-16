@@ -1,0 +1,96 @@
+.menus {
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+    background-color: $color-background;
+    margin-top: 3.7rem;
+    h2 {
+    margin-bottom: 2rem;
+    }
+
+    .all-restaurants {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        @media all and (max-width: $breackpoint-780) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .card {
+        border-radius: 1rem;
+        @include shadow;
+        .card-img {
+            margin-bottom: -0.5rem;
+        }
+        & .card-img img {
+            height: 10rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+            box-shadow: none;
+            object-position: center;
+        }
+
+        &:hover {
+            @include effect-hover;
+        }
+    }
+
+    .new {
+        position: relative;
+        @include shadow;
+        border-radius: 1rem;
+        &:hover {
+            border-radius: 1rem;
+            @include effect-hover
+        }
+    }
+
+    .new::before {
+        content: "Nouveau";
+        position: absolute;
+        height: 1.8rem;
+        width: 5rem;
+        background-color: $color-tertiary;
+        display: grid;
+        place-items: center;
+        color: green;
+        right: 1rem;
+        top: 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .card-description {
+        h3, p {
+            margin: 0 0 0 1rem;
+        }
+        h3 {
+            font-size: 1.1rem;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 1rem 1rem;
+    
+
+    i {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .fas {
+        @include heart-effect;
+        &:hover {
+            @include heart-effect-hover;
+        }
+    }
+    }
+
+}

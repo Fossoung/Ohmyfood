@@ -1,0 +1,33 @@
+footer {
+    padding: 0.7rem 0 1rem 1.5rem;
+    background-color: #353535;
+    @media all and (min-width: $breackpoint-780) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h3, a {
+        color: white;
+    }
+    h3 {
+        font-family: "Shrikhand", sans-serif;
+    }
+    .liens-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 0.5rem;
+    }
+    .fa-utensils {
+        padding-right: 0.4rem;
+        font-size: 0.8rem;
+    }
+    .fa-hands-helping {
+        font-size: 0.6rem;
+        padding-right: 0.3rem;
+    }
+
+}

@@ -1,0 +1,64 @@
+// déroulement des menus
+@keyframes appear {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Loader
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes color-loader {
+    0% {
+        color: $color-tertiary;
+        transform: scale(0.5);
+    }
+    20% {
+        color: $color-secondary;
+        transform: scale(1);
+    }
+    33% {
+        color: $color-primary;
+        transform: scale(0.5);
+    }
+    50% {
+        color: $color-tertiary;
+        transform: scale(1);
+    }
+    66% {
+        color: $color-secondary;
+        transform: scale(0.5);
+    }
+    80% {
+        color: $color-primary;
+        transform: scale(1);
+    }
+    100% {
+        color: $color-tertiary;
+        transform: scale(1);
+    }
+}
+
+// Animation hover check
+
+@keyframes check-spin {
+    from {
+        transform: rotate(-270deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
