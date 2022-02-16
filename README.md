@@ -1,5 +1,4 @@
-# Ohmyfood
-Dynamisez une page web avec des animations  CSS
+
 # Ohmyfood 🍽
 
  L'objectif est d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
